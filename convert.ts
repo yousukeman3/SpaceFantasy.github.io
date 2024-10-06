@@ -127,3 +127,7 @@ document.getElementById("copy-button")?.addEventListener("click", async () => {
     navigator.clipboard.writeText(JSON.stringify(json));
     alert("コピーしました");
 });
+
+document.getElementById("delete-button")?.addEventListener("click", async () => {
+    (document.getElementById("md-text") as HTMLInputElement).value = "";
+});
