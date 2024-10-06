@@ -120,7 +120,7 @@ document.getElementById("copy-button")?.addEventListener("click", async () => {
     json.data.status[3].value = parseInt(json.data.params[5].value);
     json.data.status[3].max = parseInt(json.data.params[5].value);
 
-    let damageDice = 1 + Math.floor(parseInt(json.data.params[0].value) / 5);
+    let damageDice = 1 + Math.floor((parseInt(json.data.params[0].value) - 1) / 5);
 
     json.data.commands = "2d6+{戦闘能力} 先制判定\n2d6+{魔術熟知} 生体知識判定\n2d6+{科学技術力} 非生体知識判定\nーーーーーー\n通常攻撃 対象：\n2d6+{戦闘能力} 命中判定\n" + damageDice + "d6+{肉体}+{グレード}  物理ダメージ\n2d6+{戦闘能力} 回避判定\nーーーーーー\n基本魔術魔術Lv.〇 対象：\n基本回復魔術Lv.〇 対象：\n2d6+{魔術熟知}+{精神}/2U  魔術行使判定\n" + damageDice + "d6+{魔力}+〇 基本攻撃魔術Lv.〇\n" + damageDice + "d6+{魔力}+〇 基本回復魔術Lv.〇\n2d6+{精神} 抵抗判定 ";
 
