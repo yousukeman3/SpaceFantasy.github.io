@@ -1,0 +1,85 @@
+{
+    "kind": "character",
+    "data": {
+        "name": "ティリア",
+        "memo": "グレード6\n総経験P:366　残:2\nグレード消費:140\n能力消費:190\n取得消費:34\n残無料分:0\n\n所持アイテム\nキュアスフィア*14\nマナスフィア*14\nウェイクボム*2\n丸薬パナシーア*1\nわんくん\nホーくん\nにゃーくん",
+        "initiative": 0,
+        "externalUrl": "",
+        "status": [
+            {
+                "label": "HP",
+                "value": 40,
+                "max": 40
+            },
+            {
+                "label": "MP",
+                "value": 55,
+                "max": 55
+            },
+            {
+                "label": "防護",
+                "value": 2,
+                "max": 2
+            },
+            {
+                "label": "魔術防御",
+                "value": 4,
+                "max": 4
+            },
+            {
+                "label": "天才少女",
+                "value": 0,
+                "max": 0
+            },
+            {
+                "label": "マナフレア",
+                "value": 0,
+                "max": 5
+            }
+        ],
+        "params": [
+            {
+                "label": "グレード",
+                "value": "6"
+            },
+            {
+                "label": "科学技術力",
+                "value": "4"
+            },
+            {
+                "label": "魔術熟知",
+                "value": "6"
+            },
+            {
+                "label": "戦闘能力",
+                "value": "4"
+            },
+            {
+                "label": "魔力",
+                "value": "5"
+            },
+            {
+                "label": "精神",
+                "value": "4"
+            },
+            {
+                "label": "肉体",
+                "value": "2"
+            }
+        ],
+        "iconUrl": "https://storage.ccfolia-cdn.net/users/YnHlkLhAX9O6OIlHImeFIrPPKtB2/files/276c11df3d663d135b5a09c6a7bfdc4a9fa27fd16d72591727b62bd0160d25b0",
+        "faces": [],
+        "x": 5,
+        "y": 109,
+        "angle": 0,
+        "width": 4,
+        "height": 4,
+        "active": true,
+        "secret": false,
+        "invisible": false,
+        "hideStatus": false,
+        "color": "#888888",
+        "commands": "2d6+{戦闘能力}+{天才少女} 先制判定\n2d6+{魔術熟知}+{天才少女} 生体知識判定\n2d6+{科学技術力}+{天才少女} 非生体知識判定\nーーーーーー\n2d6+{戦闘能力}+{天才少女} 命中判定\n2d6+{肉体}+{グレード}+{天才少女}  物理ダメージ\n2d6+{戦闘能力}+{天才少女} 回避判定\nーーーーーー\n魔術障壁 Lv.1\nデュアルファーストエイド Lv.2\n2d6+{魔術熟知}+{天才少女}+({精神}+{天才少女})/2U  魔術行使判定\n2d6+{魔力}+{天才少女}+1  基本攻撃魔術Lv.1\n2d6+{魔力}+{天才少女}+2  基本攻撃魔術Lv.2\n2d6+{魔力}+{天才少女}+3  基本攻撃魔術Lv.3\n2d6+{魔力}+{天才少女}+4  基本攻撃魔術Lv.4\n2d6+{魔力}+{天才少女}+5  基本攻撃魔術Lv.5\n2d6+{精神}+{天才少女} 抵抗判定\nーーーーーー\n『一緒に攻撃しろ』\n『主人を護れ』\n『回避に専念しろ』",
+        "owner": ""
+    }
+}
