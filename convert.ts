@@ -130,18 +130,22 @@ document.getElementById("copy-button")?.addEventListener("click", async () => {
 
 document.getElementById("delete-button")?.addEventListener("click", async () => {
     (document.getElementById("md-text") as HTMLInputElement).value = "";
+    const textarea = document.getElementById('md-text') as HTMLTextAreaElement;
+    // 高さをリセット
+    textarea.style.height = 'auto';
+    // 内容に合わせて高さを設定
+    textarea.style.height = textarea.scrollHeight + 'px';
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    const textarea = document.getElementById('md-text') as HTMLTextAreaElement;
+const textarea = document.getElementById('md-text') as HTMLTextAreaElement;
 
-    textarea.addEventListener('input', function() {
-        // 高さをリセット
-        textarea.style.height = 'auto';
-        // 内容に合わせて高さを設定
-        textarea.style.height = textarea.scrollHeight + 'px';
-    });
-
-    // 初期化時に高さを設定
+textarea.addEventListener('input', function() {
+    // 高さをリセット
+    textarea.style.height = 'auto';
+    // 内容に合わせて高さを設定
     textarea.style.height = textarea.scrollHeight + 'px';
+    
+    setTimeout(() => {
+        window.scrollTo(0, 0);
+    }, 100);
 });

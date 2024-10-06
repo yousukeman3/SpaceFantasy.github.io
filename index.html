@@ -5,14 +5,21 @@
     <title>スぺファンキャラコマ作成</title>
     <meta charset="UTF-8" />
     <script defer src="convert.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <h1>スぺファンキャラコマ作成</h1>
-    <textarea id="md-text"></textarea>
-    <br>
-    <input type="button" id="copy-button" value="ココフォリア駒データをコピー">
-    <input type="button" id="delete-button" value="テキストエリアの消去">
+    <div class="container">
+        <div class="textarea-container">
+            <h2>キャラシ入力欄</h2>
+            <textarea id="md-text"></textarea>
+        </div>
+        <div class="button-container">
+            <input type="button" id="copy-button" value="ココフォリア駒データをコピー">
+            <input type="button" id="delete-button" value="テキストエリアの消去">
+        </div>
+    </div>
 </body>
 
 </html>

@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    justify-content:left;
+    align-items: flex-start;
+}
+.textarea-container {
+    flex: 0 0 30%;
+    margin-right: 10px;
+}
+.button-container {
+    display: flex;
+    flex-direction: column;
+}
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
